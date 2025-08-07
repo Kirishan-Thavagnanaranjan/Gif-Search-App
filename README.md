@@ -1,69 +1,41 @@
-# React + TypeScript + Vite
+# 🎯 GIF Quest — AI-Powered GIF Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧭 Overview
+**GIF Quest** is a clean, responsive React app that lets users search and explore GIFs in real-time using the GIPHY API. With smooth search functionality and a dynamic image grid, this project is a great starting point for learning how to integrate third-party APIs and manage state effectively in a modern frontend app.
 
-Currently, two official plugins are available:
+This app is part of a personal 30-day challenge to build useful, real-world projects using modern tech like React, Tailwind, and TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- 🔍 Search GIFs via GIPHY API
+- 🖼️ Responsive GIF grid layout
+- ⚡ Clean, fast UI built with Tailwind CSS
+- 🧼 Clear search input button with toast feedback
+- 📦 Modular component-based architecture
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧠 What You'll Learn
+- API integration with `fetch()` + `async/await`
+- React state management using `useState`
+- Handling side effects with `useEffect`
+- Responsive UI layout with Tailwind CSS
+- Basic form handling and input validation
+- Toast notifications with `react-hot-toast`
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Tech Stack
+- ⚛️ React (with TypeScript)
+- 🎨 Tailwind CSS
+- 🔥 GIPHY API (for GIF search)
+- 🌶️ react-hot-toast (toast notifications)
+- ⚡ Vite (build tool)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🎯 Getting Started
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### ✅ Prerequisites
+- Node.js (v16 or above)
